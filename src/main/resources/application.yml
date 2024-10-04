@@ -1,0 +1,56 @@
+spring:
+  datasource:
+    url : jdbc:postgresql://localhost:5432/todo-app
+    username: postgres
+    password: 123456789
+    driver-class-name : org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+  servlet:
+    multipart:
+      enabled: true
+  http:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  application:
+    name: gestion-acces-service
+  mail:
+    host: mail52.lwspanel.com
+    port: 587
+    username: contact@atlanticds-sn.com
+    password: Atlantic@2023
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    default-encoding: utf-8
+  profiles:
+    active: dev
+# Configuration serveur heureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8081
+
+cloudinary:
+  cloud_name: di1zgxurd
+  api_key: 743957157656331
+  api_secret: Luuqw5ZDn7fYi0zHkP-Aw-Yy7SU
+  folder: logos_societes
+  folder_orbus: orbus_document
+  folder_declaration: declaration_document
+
+
+
