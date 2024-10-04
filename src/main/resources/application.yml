@@ -2,15 +2,15 @@ spring:
   datasource:
     # en Locale
 
-    #url : jdbc:postgresql://localhost:5432/todo-app
-    #username: postgres
-    #password: 123456789
+#    url : jdbc:postgresql://localhost:5432/todo-app
+#    username: postgres
+#    password: 123456789
 
     # en production
 
-    url: jdbc:postgresql://c9pv5s2sq0i76o.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/dkuhtkvlpo1la
-    username: ubgs2jsn8lqb2
-    password: p568c476a3626cb94942de3c48eeed1e302eaf254c38ef7559a82dd9ee5eae69c
+    url: jdbc:postgresql://ec2-52-22-5-20.compute-1.amazonaws.com:5432/dkuhtkvlpo1la
+    username: u5pjog4dhs9cda
+    password: pf6ff4200f6e14fbc077129c7785154d18d4b178314f6ed0ceb979c499d38435e
 
     driver-class-name : org.postgresql.Driver
   jpa:
